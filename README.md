@@ -1,4 +1,4 @@
-# Sap-ABAP-Kullanicidan-verilerin-alindigi-tablo
+# Sap-ABAP-Kullanicidan-verilerin-alindigi-tablo-olusturma-projesi
 kullanıcıdan verilerin alındığı abap projesi
 REPORT ZSAPGITHUB.
 
