@@ -3,6 +3,8 @@ kullanıcıdan verilerin alındığı abap projesi
 REPORT ZSAPGITHUB.
 
 
+
+
 data:
   begin of wa,
     CO_JOBNAME     type TBTCO-JOBNAME,
@@ -27,6 +29,8 @@ data:
 
 selection-screen begin of block job WITH FRAME TITLE t_job.
 
+
+
 * Job name
 selection-screen begin of line.
 selection-screen COMMENT 1(30) t_JOBNAM.
@@ -44,6 +48,8 @@ selection-screen begin of line.
 selection-screen COMMENT 1(30) t_DATE.
 select-options s_DATE for wa-CO_SDLSTRTDT.
 selection-screen end of line.
+
+
 
 * Job status
 * scheduled = 'P'
@@ -77,6 +83,8 @@ selection-screen end of line.
 selection-screen end of block job.
 
 
+
+
 selection-screen begin of block user WITH FRAME TITLE t_user.
 
 * Client
@@ -103,6 +111,9 @@ selection-screen COMMENT 1(30) t_class.
 select-options s_class for wa-us_class.
 selection-screen end of line.
 
+
+
+
 selection-screen end of block user.
 
 *&---------------------------------------------------------------------*
@@ -128,6 +139,8 @@ initialization.
   t_class  = 'User group'.
 
 *&---------------------------------------------------------------------*
+
+
 START-OF-SELECTION.
 
   clear s_STATUS.
